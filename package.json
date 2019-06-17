@@ -1,8 +1,8 @@
 {
-  "name": "vue-communication",
+  "name": "vuebootstrap-only",
   "version": "1.0.0",
   "private": true,
-  "author": "Eugen Demidcik",
+  "author": "",
   "license": "ISC",
   "repository": {
     "type": "git",
