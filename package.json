@@ -1,12 +1,12 @@
 {
-  "name": "vuebootstrap-only",
+  "name": "about-me",
   "version": "1.0.0",
   "private": true,
-  "author": "",
+  "author": "Eugen Demidcik",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/hpdesigner/vuejs-only.git"
+    "url": "https://github.com/HPDESIGNER/about-me"
   },
   "scripts": {
     "serve": "vue-cli-service serve"
