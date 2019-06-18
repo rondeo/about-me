@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col p-0">
                 <nav class="navbar navbar-dark bg-dark">
-                    <info-icon></info-icon>
+                    <visiting-card></visiting-card>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -66,10 +66,10 @@
 </template>
 <script>
     import 'bootstrap/js/dist/collapse.js';
-    import InfoIcon from "./visiting-card";
+    import VisitingCard from "./visiting-card";
     export default {
         name: "navi-topic",
-        components: {InfoIcon},
+        components: {VisitingCard},
         data() {
             return {
                 degQuarterList: {
