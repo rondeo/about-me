@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col p-0">
                 <nav class="navbar navbar-dark bg-dark">
-                    <visiting-card></visiting-card>
+                    <visiting-card :where="adress"></visiting-card>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -24,8 +24,13 @@
     export default {
         name: "navi-topic",
         components: {PLanguages, VisitingCard},
+
         data() {
             return {
+                adress: {
+                    name: "Musterman Str. ",
+                    number: "100"
+                }
             }
         }
     }

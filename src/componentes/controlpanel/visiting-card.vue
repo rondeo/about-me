@@ -8,7 +8,7 @@
                 <div class="card mt-3">
                     <div class="topic text-center w-100 border-bottom border-white p-0">F a c h i n f o r m a t i k e r / W e b</div>
                     <div class="text-center name">E u g e n &nbsp;&nbsp; D e m i d c i k<br>Mobil:&nbsp;&nbsp;0176 69558695</div>
-                    <div class="bottom text-right mt-4 p-1">Heppacher Str. 8<br>70327 Stuttgart<br>Mobil:&nbsp;&nbsp;0176 69558695<br>E-Mail: eugen.dem@gmx.de</div>
+                    <div class="bottom text-right mt-4 p-1">{{where.name}} {{where.number}}<br>70327 Stuttgart<br>Mobil:&nbsp;&nbsp;0176 69558695<br>E-Mail: eugen.dem@gmx.de</div>
                 </div>
         </div>
         <source-list></source-list>
@@ -20,6 +20,15 @@
     import SourceList from "./source-list";
     export default {
         name: "visiting-card",
+        props: {
+          where: {
+              type: Object,
+              default: {
+                  name: "&nbsp;",
+                  number: "&nbsp;"
+              }
+          }
+        },
         components: {SourceList}
     }
 </script>

@@ -18,13 +18,13 @@
         <tr>
             <th scope="row">PHP</th>
             <td>Fortgeschritten</td>
-            <td>5</td>
+            <td>4</td>
             <td>Umschulungsfach, Selbststudium</td>
         </tr>
         <tr>
             <th scope="row">JavaScript</th>
             <td>Fortgeschritten</td>
-            <td>2</td>
+            <td>1</td>
             <td>Umschulungsfach, Selbststudium</td>
         </tr>
         <tr>

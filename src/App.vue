@@ -1,24 +1,14 @@
 <template>
     <div class="container">
-        <navi-topic :language1="php"></navi-topic>
+        <navi-topic></navi-topic>
     </div>
 </template>
 <script>
-
     import NaviTopic from "./componentes/controlpanel/navi-topic";
     export default {
         name: 'app',
         components: {
             NaviTopic,
-        },
-        data() {
-            return {
-                php: {
-                    name: "PHP",
-                    level:"gut",
-                    description:"gute Kenntnisse in der prozedualen Programmierung"
-                }
-            }
         }
     }
 </script>
