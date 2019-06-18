@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col p-0">
                 <nav class="navbar navbar-dark bg-dark">
-                    <visiting-card :where="adress"></visiting-card>
+                    <visiting-card :datas="dataList"></visiting-card>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -27,9 +27,15 @@
 
         data() {
             return {
-                adress: {
-                    name: "Musterman Str. ",
-                    number: "100"
+                dataList: {
+                    name: {
+                        firt: "Eugen",
+                        second: "Demidcik"
+                    },
+                    address: {
+                        name: "Musterman Str. ",
+                        number: "100"
+                    }
                 }
             }
         }
