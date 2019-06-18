@@ -11,16 +11,7 @@
                     <div class="bottom text-right mt-4 p-1">Heppacher Str. 8<br>70327 Stuttgart<br>Mobil:&nbsp;&nbsp;0176 69558695<br>E-Mail: eugen.dem@gmx.de</div>
                 </div>
         </div>
-
-        <div class="collapse text-white w-100 position-absolute fixed-top mt-5" id="source">
-            <div class="mt-3 p-2 bg-dark">
-                <a href="https://mathebw.de/" class="text-white">- https://mathebw.de/</a><br>
-                <a href="https://github.com/HPDESIGNER/carousel-css-js-demo" class="text-white">- https://github.com/HPDESIGNER/carousel-css-js-demo</a><br>
-                <a href="https://memory-js.playground.ipunkt.cloud/" class="text-white">- https://memory-js.playground.ipunkt.cloud/</a><br>
-                <a href="https://gitlab.com/ipunkt/officetools/php-memory?nav_source=navbar" class="text-white">- https://gitlab.com/ipunkt/officetools/php-memory?nav_source=navbar/</a><br>
-            </div>
-
-        </div>
+        <source-list></source-list>
     </div>
 
 </template>

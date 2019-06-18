@@ -72,72 +72,7 @@
         components: {VisitingCard},
         data() {
             return {
-                degQuarterList: {
-                    degQuarterStart: 0,
-                    degQuarter1: 0,
-                    degQuarter2: 0,
-                    degQuarter3: 0,
-                    degQuarter4: 0,
-                    degQuarter5: 0,
-                    degQuarter6: 0,
-                    degQuarter7: 0,
-                    degQuarter8: 0,
-                },
-                textQuarterList: {
-                    textQuarter1: "",
-                    textQuarter2: "",
-                    textQuarter3: "",
-                    textQuarter4: "",
-                    textQuarter5: "",
-                    textQuarter6: "",
-                    textQuarter7: "",
-                    textQuarter8: "",
-                },
             }
-        },
-        methods: {
-            resetDegree: function(degree){
-                if(parseInt(degree) <=25){
-                    return 0;
-                }
-                else {
-                    return parseInt(degree) -25;
-                }
-            },
-            degSum: function() {
-              return parseInt(this.degQuarterList.degQuarter1)+parseInt(this.degQuarterList.degQuarter2)+parseInt(this.degQuarterList.degQuarter3)+parseInt(this.degQuarterList.degQuarter4)+parseInt(this.degQuarterList.degQuarter5)+parseInt(this.degQuarterList.degQuarter6)+parseInt(this.degQuarterList.degQuarter7)+parseInt(this.degQuarterList.degQuarter8);
-            },
-            setDegree: function () {
-                // ||this.degSum()<100
-                if(this.degSum()>100){
-                    alert("DER GESAMTWERT LIEGT ÜBER 100%");
-                }
-                else {
-                    this.degQuarterList.degQuarterStart = parseInt(this.degQuarterList.degQuarterStart);
-                    this.degQuarterList.degQuarter1 = this.resetDegree(this.degQuarterList.degQuarter1) + parseInt(this.degQuarterList.degQuarterStart);
-                    this.degQuarterList.degQuarter2 = parseInt(this.degQuarterList.degQuarter2) + parseInt(this.degQuarterList.degQuarter1);
-                    this.degQuarterList.degQuarter3 = parseInt(this.degQuarterList.degQuarter3) + parseInt(this.degQuarterList.degQuarter2);
-                    this.degQuarterList.degQuarter4 = parseInt(this.degQuarterList.degQuarter4) + parseInt(this.degQuarterList.degQuarter3);
-                    this.degQuarterList.degQuarter5 = parseInt(this.degQuarterList.degQuarter5) + parseInt(this.degQuarterList.degQuarter4);
-                    this.degQuarterList.degQuarter6 = parseInt(this.degQuarterList.degQuarter6) + parseInt(this.degQuarterList.degQuarter5);
-                    this.degQuarterList.degQuarter7 = parseInt(this.degQuarterList.degQuarter7) + parseInt(this.degQuarterList.degQuarter6);
-                    this.degQuarterList.degQuarter8 = parseInt(this.degQuarterList.degQuarter8) + parseInt(this.degQuarterList.degQuarter7);
-                    this.$emit('getInputContent',[this.degQuarterList.degQuarterStart, this.degQuarterList.degQuarter1, this.degQuarterList.degQuarter2, this.degQuarterList.degQuarter3,this.degQuarterList.degQuarter4,this.degQuarterList.degQuarter5,this.degQuarterList.degQuarter6,this.degQuarterList.degQuarter7,this.degQuarterList.degQuarter8])
-                    this.degQuarterList.degQuarter8 = parseInt(this.degQuarterList.degQuarter8) - parseInt(this.degQuarterList.degQuarter7);
-                    this.degQuarterList.degQuarter7 = parseInt(this.degQuarterList.degQuarter7) - parseInt(this.degQuarterList.degQuarter6);
-                    this.degQuarterList.degQuarter6 = parseInt(this.degQuarterList.degQuarter6) - parseInt(this.degQuarterList.degQuarter5);
-                    this.degQuarterList.degQuarter5 = parseInt(this.degQuarterList.degQuarter5) - parseInt(this.degQuarterList.degQuarter4);
-                    this.degQuarterList.degQuarter4 = parseInt(this.degQuarterList.degQuarter4) - parseInt(this.degQuarterList.degQuarter3);
-                    this.degQuarterList.degQuarter3 = parseInt(this.degQuarterList.degQuarter3) - parseInt(this.degQuarterList.degQuarter2);
-                    this.degQuarterList.degQuarter2 = parseInt(this.degQuarterList.degQuarter2) - parseInt(this.degQuarterList.degQuarter1);
-                    this.degQuarterList.degQuarter1 = parseInt(this.degQuarterList.degQuarter1) + 25;
-                    this.$emit('getInputContentText',[this.textQuarterList.textQuarter1, this.textQuarterList.textQuarter2, this.textQuarterList.textQuarter3,this.textQuarterList.textQuarter4,this.textQuarterList.textQuarter5,this.textQuarterList.textQuarter6,this.textQuarterList.textQuarter7,this.textQuarterList.textQuarter8])
-                }
-            },
-            sum: function(){
-                let summe = parseInt(this.degQuarterList.degQuarter1)+parseInt(this.degQuarterList.degQuarter2)+parseInt(this.degQuarterList.degQuarter3)+parseInt(this.degQuarterList.degQuarter4)+parseInt(this.degQuarterList.degQuarter5)+parseInt(this.degQuarterList.degQuarter6)+parseInt(this.degQuarterList.degQuarter7)+parseInt(this.degQuarterList.degQuarter8);
-                return summe;
-            },
         }
     }
 </script>
